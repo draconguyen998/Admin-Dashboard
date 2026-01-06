@@ -177,13 +177,14 @@ function TableSection() {
                 Top Products
               </h3>
             </div>
-            <p className="text-sm text-slate-500 dark:text-slate-400">
-              Best performing products
-            </p>
+
+            <button className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+              View all
+            </button>
           </div>
-          <button className="text-blue-600 hover:text-blue-700 text-sm font-medium">
-            View all
-          </button>
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            Best performing products
+          </p>
         </div>
         {/* Dynamic Data */}
         <div className="p-6 space-y-4">
