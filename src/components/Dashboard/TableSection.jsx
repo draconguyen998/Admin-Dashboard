@@ -71,11 +71,11 @@ function TableSection() {
   const getStatusColor = (status) => {
     switch (status) {
       case "completed":
-        return "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400";
+        return "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-500";
       case "pending":
-        return "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400";
+        return "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-500";
       case "cancelled":
-        return "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400";
+        return "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-500";
       default:
         return "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-400";
     }
@@ -108,6 +108,9 @@ function TableSection() {
                   Order ID
                 </th>
                 <th className="text-left p-4 text-sm font-semibold text-slate-600 dark:text-white">
+                  Customer
+                </th>
+                <th className="text-left p-4 text-sm font-semibold text-slate-600 dark:text-white">
                   Product
                 </th>
                 <th className="text-left p-4 text-sm font-semibold text-slate-600 dark:text-white">
@@ -117,7 +120,7 @@ function TableSection() {
                   Status
                 </th>
                 <th className="text-left p-4 text-sm font-semibold text-slate-600 dark:text-white">
-                  Date
+                  Action
                 </th>
               </tr>
             </thead>
@@ -147,7 +150,7 @@ function TableSection() {
                     </td>
                     <td className="p-4">
                       <span
-                        className={`text-slate-400 dark:text-white font-medium text-xs px-3 py-1 rounded-full ${getStatusColor(
+                        className={` font-medium text-xs px-3 py-1 rounded-full ${getStatusColor(
                           order.status
                         )}`}>
                         {order.status}
