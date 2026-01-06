@@ -104,7 +104,7 @@ function TableSection() {
           <table className="w-full">
             <thead>
               <tr>
-                <th className="text-left p-4 text-sm font-semibold text-slate-600 dark:text-white">
+                <th className="text-left p-4 text-sm font-semibold text-slate-600 dark:text-red">
                   Order ID
                 </th>
                 <th className="text-left p-4 text-sm font-semibold text-slate-600 dark:text-white">
