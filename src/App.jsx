@@ -1,7 +1,7 @@
 import Dashboard from "./components/Dashboard/Dashboard";
 import Header from "./components/Layout/Header";
 import Sidebar from "./components/Layout/Sidebar";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [sideBarCollapsed, setSideBarCollapsed] = useState(false);
